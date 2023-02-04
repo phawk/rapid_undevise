@@ -11,6 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: "shared/flash" %>
+
+    <main class="max-w-xl mx-auto my-8">
+      <%= yield %>
+    </main>
   </body>
 </html>
