@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "devise", "~> 4.8"
+
+gem "class_variants", "~> 0.0.6"

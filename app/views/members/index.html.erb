@@ -17,5 +17,9 @@
       <% end %>
     </ul>
 
+    <div class="mt-8 flex flex-col items-center">
+      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: button_classes.render(style: :secondary) %>
+    </div>
+
   </div>
 </div>
