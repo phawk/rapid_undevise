@@ -1,0 +1,19 @@
+<div class="max-w-xs mx-auto">
+  <%= header "Log in" %>
+
+  <%= form_with(url: sessions_path) do |f| %>
+    <div class="mb-4">
+      <%= f.label :email, class: label_classes.render %>
+      <div class="mt-1"><%= f.email_field :email, autofocus: true, autocomplete: "email", class: input_classes.render %></div>
+    </div>
+
+    <div class="mb-4">
+      <%= f.label :password, class: label_classes.render %>
+      <div class="mt-1"><%= f.password_field :password, autocomplete: "current-password", class: input_classes.render %></div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Log in", class: button_classes.render %>
+    </div>
+  <% end %>
+</div>
