@@ -2,7 +2,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :display_name, presence: true
+  validates :display_name, :email, presence: true
 
   # has_secure_password
 
